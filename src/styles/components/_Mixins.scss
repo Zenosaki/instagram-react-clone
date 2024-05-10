@@ -1,0 +1,16 @@
+@mixin ratio($width, $height){
+  width: $width;
+  height: $height;
+}
+
+@mixin CenterDiv($display,$direction,$aligne,$justify){
+  display: $display;
+  flex-direction: $direction;
+  align-items: $aligne;
+  justify-content: $justify;
+}
+
+@mixin margin-box($top,$bottom){
+  margin-top: $top;
+  margin-bottom: $bottom;
+}

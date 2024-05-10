@@ -1,0 +1,21 @@
+.install-app-container{
+  @include ratio(100%, auto);
+  @include CenterDiv(flex,column,center,center);
+  gap: 18px;
+  p{
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+  .app-info{
+    display: flex;
+    gap: 8px;
+    .play-store-img{
+      cursor: pointer;  
+      max-width: 135px;
+    }
+    .microsoft-img{
+      cursor: pointer;
+      max-width: 110px;
+    }
+  }
+}

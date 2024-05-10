@@ -1,0 +1,88 @@
+
+.user-info-container{
+  @include margin-box(0px,10px);
+  @include ratio(100%, 400px);
+  @include CenterDiv(flex,column,center,center);
+  border: 1px solid $light-grey;
+  img{
+    @include margin-box(22px,25px);
+    cursor: pointer;
+  }
+  .seperator{
+    @include margin-box(0px,25px);
+    @include CenterDiv(flex,row,center,center);
+    gap: 20px;
+    p{
+      color: rgb(95, 95, 95);
+      font-weight: 500;
+    }
+    div{
+      @include ratio(105px, 1px);
+      background-color: hsl(0, 1%, 78%);
+    }
+  }
+  .form-container{
+    .user-name{
+      @include margin-box(0px,8px);
+      @include ratio(100%, auto);
+      border-radius: 5px;
+      outline: none;
+      padding: 10px;
+      border: 1px solid $light-grey;
+      font-size: 13px;
+      &:focus{
+        border-color:hsl(0, 0%, 58%);
+      }
+    }
+    .user-password{
+      @include margin-box(0px,15px);
+      @include ratio(100%, auto);
+      border: 1px solid $light-grey;
+      display: grid;
+      grid-template-columns: 1fr 25%;
+      padding: 10px;
+      border-radius: 5px;
+      input{
+        border: none;
+        padding-left: 8px;
+        font-size: 13px;
+        outline: none;
+      }
+      button{
+        cursor: pointer;
+        padding-left: 5px;
+        border: none;
+        background-color: white;
+        &:hover{
+          color: rgb(137, 136, 136);
+        }
+      }
+    }
+    .Connexion-button{
+      @include margin-box(-1px,18px);
+      cursor: pointer;
+      background-color: hsl(209, 74%, 56%);
+      padding: 8px;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      @include ratio(270px, auto);
+      &:hover{
+        background-color: hsl(209, 57%, 45%);
+      }
+    }
+  }
+  .Link-Facebook{
+    @include margin-box(0px,20px);
+    @include CenterDiv(flex,row,center,center);
+    a{
+      @extend .common-style-links;
+    }
+  }
+  a{
+    @extend .common-style-links;
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+}

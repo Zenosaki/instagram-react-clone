@@ -1,0 +1,17 @@
+
+.content-box{
+  @include margin-box(0px,15px);
+  border: 1px solid $light-grey;
+  padding: 23px;
+  @include CenterDiv(flex,row,center,center);
+  gap: 5px;
+  p{
+    font-size: 14px
+  }
+  a{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: hsl(195, 60%, 56%);
+  }
+}
